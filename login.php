@@ -7,9 +7,7 @@ include("partials/_header.php");
 
 // $pass = "";
 // echo password_hash($pass, PASSWORD_BCRYPT);
-
 // $hash=password_hash($pass, PASSWORD_BCRYPT);
-
 // echo password_verify($pass,$hash);
 
 // verifie que le bouton envoyer à bien éte cliquer
@@ -53,14 +51,6 @@ if (!empty($_POST["submited"])) {
       echo "L'utilisateur n'existe pas";
     }
     // debug($student);
-
-    // verifie user_pswd et user_name match
-    // if ($user_name_defaut == $user_name && $user_pswd_defaut == $user_pswd) {
-    //   $_SESSION["user_pswd"] = $user_pswd;
-    //   header('Location:index.php');
-    // } else {
-    //   echo "votre mot de passe et user_name et incorrect";
-    // }
   } else {
     echo "Champs obligatoires";
   }
